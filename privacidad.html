@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kairos · Política de privacidad</title>
+  <style>
+    :root { color-scheme: light dark; --fg: #1d1d1f; --muted: #6e6e73; --bg: #fbfbfd; --accent: #0071e3; }
+    @media (prefers-color-scheme: dark) { :root { --fg: #f5f5f7; --muted: #a1a1a6; --bg: #111113; --accent: #2997ff; } }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    main { max-width: 680px; margin: 0 auto; padding: 56px 24px 72px; }
+    h1 { font-size: 34px; margin: 0 0 4px; }
+    h2 { font-size: 21px; margin: 36px 0 8px; }
+    p, li { margin: 0 0 10px; }
+    ul { padding-left: 22px; }
+    .muted { color: var(--muted); }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <p><a href="./">← Kairos</a></p>
+    <h1>Política de privacidad</h1>
+    <p class="muted">Última actualización: 13 de septiembre de 2026</p>
+
+    <p>Kairos es una app personal de agenda para iPhone y Mac con un asistente de inteligencia artificial. Esta política explica qué datos usa, para qué y cómo se pueden borrar.</p>
+
+    <h2>Qué datos usa</h2>
+    <p>Solo los de las cuentas que el usuario conecta y únicamente con los permisos que autoriza:</p>
+    <ul>
+      <li><strong>Google Calendar:</strong> la lista de calendarios y sus eventos, para mostrarlos, avisar antes de cada uno y crear, modificar o borrar eventos cuando el usuario lo pide. También el email y el nombre de la cuenta, para identificarla.</li>
+      <li><strong>Microsoft 365:</strong> el calendario (igual que en Google), la disponibilidad de otras personas de la organización para proponer reuniones (solo si están libres u ocupadas, nunca el detalle de sus eventos) y el correo, para resumir mensajes, marcarlos y preparar borradores. Un mail se envía solo cuando el usuario lo confirma.</li>
+      <li><strong>La cuenta de Kairos:</strong> el email con el que se registra el usuario y sus preferencias (zona horaria, horarios, avisos).</li>
+    </ul>
+
+    <h2>Para qué se usan</h2>
+    <p>Exclusivamente para brindar las funciones de Kairos al propio usuario: ver su agenda, recibir recordatorios y que el asistente responda y ejecute lo que le pide. Los datos no se venden, no se usan para publicidad y no se comparten con terceros, salvo lo indicado en "Procesamiento por inteligencia artificial".</p>
+
+    <h2>Procesamiento por inteligencia artificial</h2>
+    <p>Cuando el usuario le escribe al asistente, el texto del pedido y los datos de agenda o correo necesarios para responder se envían a proveedores de modelos de lenguaje (OpenAI y, como respaldo, Anthropic) a través de sus APIs, solo para generar esa respuesta.</p>
+
+    <h2>Cómo se guardan</h2>
+    <ul>
+      <li>Los permisos de acceso a Google y Microsoft (tokens) se guardan cifrados en la base de datos del servicio y nunca en el dispositivo.</li>
+      <li>Se guarda una copia de los eventos de una ventana de tiempo acotada, para mostrar la agenda y calcular los recordatorios.</li>
+      <li>Del correo se guarda solo remitente, asunto y fecha, durante 14 días, para avisar de mensajes nuevos. El contenido de los mails se lee en el momento y no se guarda.</li>
+      <li>El acceso a los datos de cada usuario está restringido a ese usuario.</li>
+    </ul>
+
+    <h2>Datos de Google</h2>
+    <p>El uso y la transferencia de la información recibida de las APIs de Google por parte de Kairos se ajustan a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos del Usuario de los Servicios de las APIs de Google</a>, incluidos los requisitos de Uso Limitado.</p>
+
+    <h2>Cómo borrar los datos</h2>
+    <ul>
+      <li>Desde <strong>Ajustes → Desconectar</strong> en Kairos se borran los calendarios, eventos, recordatorios y permisos de esa cuenta.</li>
+      <li>El acceso también se puede revocar en cualquier momento desde <a href="https://myaccount.google.com/permissions">la cuenta de Google</a> o desde la configuración de la cuenta de Microsoft.</li>
+    </ul>
+
+    <h2>Contacto</h2>
+    <p>Para consultas o para pedir que se borren todos los datos, escribí al email de soporte que figura en la pantalla de autorización de Google al conectar Kairos.</p>
+  </main>
+</body>
+</html>
